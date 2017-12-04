@@ -1,0 +1,35 @@
+<div class="col-md-6">
+
+    <div style="text-align: center">
+        <h3>Se Connecter</h3>
+        <form (ngSubmit)="signIn()" style="margin-top: 30px">
+            Email:<br>
+            <input type="text" [(ngModel)]="emailIn"  name="email">
+            <br>
+            Mot de passe :<br>
+            <input type="password" [(ngModel)]="passIn" name="password">
+            <br><br>
+            <input type="submit"  value="Se Connecter"  [routerLink]="['/memo']">
+        </form>
+
+    </div>
+
+</div>
+
+<div class="col-md-6">
+
+    <div style="text-align: center">
+        <h3>S'incrire</h3>
+        <form (ngSubmit)="signUp()" style="margin-top: 30px">
+            Email:<br>
+            <input type="text" [(ngModel)]="emailUp"  name="email">
+            <br>
+            Mot de passe :<br>
+            <input type="password" [(ngModel)]="passUp" name="password">
+            <br><br>
+            <input type="submit" value="S'incrire">
+        </form>
+
+    </div>
+
+</div>

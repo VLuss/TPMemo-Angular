@@ -1,0 +1,14 @@
+<h2 style="text-align:center">Liste des mémos</h2>
+<div >
+        <div *ngFor="let b of ">
+                <div class="col-xs-12" style="margin:20px 5px; text-align:center">
+                    <h3 style="text-align:center">{{b.titre}}</h3>
+                    <p> {{b.texte}} </p>
+                    <button type="button" >Supprimer</button>
+                </div>
+            </div>
+</div>
+
+<div style="text-align: center; margin-top: 30px">
+    <button type="button" [routerLink]="['/AddMemo']">Ajouter un memo</button>
+</div>
